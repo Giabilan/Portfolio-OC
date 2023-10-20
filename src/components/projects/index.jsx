@@ -1,7 +1,7 @@
 import Card from "./Card";
-import Kasa from "../../../public/Kasa.png"; // Remplacez "" par le chemin réel vers votre image
-import OhMyFood from "../../../public/OhMyFood.png";
-import Booki from "../../../public/Booki.png";
+import Kasa from "../../assets/kasa.png"; // Remplacez "" par le chemin réel vers votre image
+import OhMyFood from "../../assets/OhMyFood.png";
+import Booki from "../../assets/Booki.png";
 
 import "./style.scss";
 
@@ -12,7 +12,7 @@ const Projects = () => {
         Projets
         <div className="schoolName">
           <img
-            src="./public/logo_oc.png"
+            src="./src/assets/logo_oc.png"
             alt="logo OpenClassrooms"
           />
         </div>

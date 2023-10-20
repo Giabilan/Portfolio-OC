@@ -2,7 +2,7 @@ import Button from "../Button";
 import "./style.scss";
 import { motion } from "framer-motion";
 
-const fileUrl = "public/cv_rajendran_giabilan.pdf";
+const fileUrl = "./src/assets/cv_rajendran_giabilan.pdf";
 
 const textVariants = {
   initial: {
@@ -79,7 +79,7 @@ const Hero = () => {
         Créatif Sérieux Challenge Passion
       </motion.div>
       <div className="imageContainer">
-        <img src="/pic_of_giabilan.png" alt="" />
+        <img src="src/assets/pic_of_giabilan.png" alt="" />
       </div>
     </div>
   );
