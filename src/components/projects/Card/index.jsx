@@ -6,15 +6,13 @@ const Card = ({ projectTitle, projectDesc, projectImage, link }) => {
   return (
     <>
       <div className="card">
-        <div className="projectTitle">{projectTitle}</div>
         <a href={link} target="_blank" rel="noreferrer" className="projectCard">
+          <div className="projectTitle">{projectTitle}</div>
           <div className="hoverLinkIcon">
             <FaExternalLinkAlt />
           </div>
           <img src={projectImage} alt={projectTitle} />
-          <div className="projectDesc">
-            {projectDesc}
-          </div>
+          <div className="projectDesc">{projectDesc}</div>
         </a>
       </div>
     </>

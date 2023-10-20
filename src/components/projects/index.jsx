@@ -9,8 +9,13 @@ const Projects = () => {
   return (
     <div className="projectContainer">
       <h2 className="title">
-        Projets  
-        <div className="schoolName">OpenClassrooms</div>
+        Projets
+        <div className="schoolName">
+          <img
+            src="./public/logo_oc.png"
+            alt="logo OpenClassrooms"
+          />
+        </div>
       </h2>
       <div className="projects">
         <Card

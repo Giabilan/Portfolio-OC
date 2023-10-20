@@ -8,12 +8,44 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     height: 100%;
-
     @include mobile {
       justify-content: flex-end;
       padding: 20px;
+    }
+    .social {
+      .linkedinLink {
+        img {
+          transition: all 200ms ease;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+      img:hover {
+        transform: scale(0.97);
+        opacity: 0.7;
+      }
+    }
+    .contactButton {
+      button {
+        padding: 10px 30px;
+        margin-left: 30px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.3s ease;
+      }
+
+      button:hover {
+        background-color: white;
+        color: black;
+      }
     }
 
     span {

@@ -1,5 +1,8 @@
+import Button from "../Button";
 import "./style.scss";
 import { motion } from "framer-motion";
+
+const fileUrl = "public/cv_rajendran_giabilan.pdf";
 
 const textVariants = {
   initial: {
@@ -52,12 +55,12 @@ const Hero = () => {
             Développeur Web Front End
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button id="Portfolio" variants={textVariants}>
-              Voir les derniers projets
-            </motion.button>
-            <motion.button id="contact" variants={textVariants}>
-              Voir le CV
-            </motion.button>
+            <motion.a href="#Projets" variants={textVariants}>
+              <Button content="Voir mes projets" />
+            </motion.a>
+            <motion.a href={fileUrl} download>
+              <Button content="Télecharger mon CV" />
+            </motion.a>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -69,15 +72,15 @@ const Hero = () => {
       </div>
       <motion.div
         className="slidingTextContainer"
-        variants={sliderVariants}s
+        variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Créatif Passion
+        Créatif Sérieux Challenge Passion
       </motion.div>
-      {/* <div className="imageContainer">
-        <img src="/vijay.png" alt="" />
-      </div> */}
+      <div className="imageContainer">
+        <img src="/pic_of_giabilan.png" alt="" />
+      </div>
     </div>
   );
 };

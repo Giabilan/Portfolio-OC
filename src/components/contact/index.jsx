@@ -3,6 +3,7 @@ import "./style.scss";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Button from "../Button";
 
 const variants = {
   initial: {
@@ -85,10 +86,10 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
+          <input type="text" required placeholder="Nom" name="name" />
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
+          <Button content="Envoyer" />
           {error && "Error"}
           {success && "Success"}
         </motion.form>
