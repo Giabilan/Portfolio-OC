@@ -5,10 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 34px;
-    background: #333;
+    font-size: 26px;
     border-radius: 80px;
-    margin: 20px 600px 50px 600px;
+    margin: 50px auto ;
     .schoolName {
       display: flex;
       align-items: center;
@@ -18,7 +17,6 @@
       border-radius: 50px;
       img {
         height: 100%;
-        width: 100%;
         object-fit: cover;
         box-shadow: rgba(154, 18, 207, 0.15) 0px 2px 8px;
       }

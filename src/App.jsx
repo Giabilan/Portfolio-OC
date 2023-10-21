@@ -2,8 +2,9 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
-import "./style/index.scss"
+import "./style/index.scss";
 import Skills from "./components/skills";
+import AboutMe from "./components/aboutMe";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
+      <section id="AboutMe"> <AboutMe /> </section>
     </div>
   );
 };

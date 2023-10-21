@@ -1,11 +1,17 @@
 .skillsContainer {
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 34px;
-    background: #333;
-    border-radius: 80px;
-    margin: 20px 600px 50px 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin: 50px auto 100px auto;
+  max-width: 1366px;
+
+  .iconsContainer {
+    height: 100%;
+    width: 100px;
+    img {
+      width: 60px;
+      border-radius: 20px;
+      padding: 10px;
+    }
   }
 }

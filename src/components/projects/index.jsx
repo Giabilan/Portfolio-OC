@@ -1,22 +1,15 @@
-import Card from "./Card";
+import Card from "./card";
 import Kasa from "../../assets/kasa.png"; // Remplacez "" par le chemin réel vers votre image
 import OhMyFood from "../../assets/OhMyFood.png";
 import Booki from "../../assets/Booki.png";
 
 import "./style.scss";
+import Title from "../title";
 
 const Projects = () => {
   return (
     <div className="projectContainer">
-      <h2 className="title">
-        Projets
-        <div className="schoolName">
-          <img
-            src="./src/assets/logo_oc.png"
-            alt="logo OpenClassrooms"
-          />
-        </div>
-      </h2>
+      <Title content="Projets" />
       <div className="projects">
         <Card
           projectTitle="Kasa"
