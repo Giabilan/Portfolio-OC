@@ -1,5 +1,3 @@
-@import "../../style/index.scss";
-
 .navbar {
   height: 100px;
 
@@ -10,10 +8,6 @@
     align-items: center;
     justify-content: end;
     height: 100%;
-    @include mobile {
-      justify-content: flex-end;
-      padding: 20px;
-    }
     .social {
       .linkedinLink {
         img {
@@ -31,7 +25,7 @@
     .contactButton {
       button {
         padding: 10px 30px;
-        margin-left: 30px;
+        margin: 20px;
         border: 1px solid white;
         border-radius: 10px;
         background-color: transparent;
@@ -50,8 +44,44 @@
 
     span {
       font-weight: bold;
-      @include mobile {
-        display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .navbar {
+    height: 100px;
+
+    .wrapper {
+      max-width: 1366px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
+      .social {
+        .linkedinLink {
+          img {
+            transition: all 200ms ease;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+          }
+        }
+        img:hover {
+          transform: scale(0.97);
+          opacity: 0.7;
+        }
+      }
+      .contactButton {
+        button {
+          padding: 10px;
+          font-size: 12px;
+          margin: 10px;
+        }
+      }
+      span {
+        font-weight: bold;
       }
     }
   }

@@ -1,34 +1,18 @@
 import { useRef, useState } from "react";
 import "./style.scss";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import Button from "../Button";
-
-const variants = {
-  initial: {
-    y: 500,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.1,
-    },
-  },
-};
+import Title from "../title";
 
 const Contact = () => {
-  const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -46,7 +30,7 @@ const [message, setMessage] = useState("");
         () => {
           setError(true);
         }
-    );
+      );
     setName("");
     setEmail("");
     setMessage("");
@@ -54,13 +38,8 @@ const [message, setMessage] = useState("");
 
   return (
     <>
-      <motion.div
-        ref={ref}
-        className="contact"
-        variants={variants}
-        initial="initial"
-        whileInView="animate"
-      >
+      <Title content="Contact" />
+      <div className="contact">
         {success && (
           <>
             <div className="modalContainer">
@@ -100,13 +79,12 @@ const [message, setMessage] = useState("");
             </div>
           </>
         )}
-        <motion.div className="textContainer" variants={variants}>
-          <motion.h1 variants={variants}>Let’s work together</motion.h1>
-          <motion.div className="item" variants={variants}>
+        <div className="textContainer">
+          <div className="item">
             <h2>Mail</h2>
             <span>giabilan.r@gmail.com</span>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
+          </div>
+          <div className="item">
             <h2>
               Linkedin
               <a
@@ -118,20 +96,14 @@ const [message, setMessage] = useState("");
                 <FaExternalLinkAlt />
               </a>
             </h2>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
+          </div>
+          <div className="item">
             <h2>Télephone</h2>
             <span>+33 7 81 53 23 48</span>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         <div className="formContainer">
-          <motion.form
-            ref={formRef}
-            onSubmit={sendEmail}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 1 }}
-          >
+          <form ref={formRef} onSubmit={sendEmail}>
             <input
               type="text"
               required
@@ -157,9 +129,9 @@ const [message, setMessage] = useState("");
               onChange={(e) => setMessage(e.target.value)}
             />
             <Button content="Envoyer" />
-          </motion.form>
+          </form>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

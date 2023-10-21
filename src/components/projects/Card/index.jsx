@@ -1,21 +1,19 @@
 import PropTypes from "prop-types";
-import "./style.scss";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Card = ({ projectTitle, projectDesc, projectImage, link }) => {
   return (
-    <>
-      <div className="card">
-        <a href={link} target="_blank" rel="noreferrer" className="projectCard">
-          <div className="projectTitle">{projectTitle}</div>
-          <div className="hoverLinkIcon">
-            <FaExternalLinkAlt />
-          </div>
+    <div className="card">
+      <a href={link} target="_blank" rel="noreferrer" className="projectCard">
+        <div className="projectTitle">
+          {projectTitle} <FaExternalLinkAlt />
+        </div>
+        <div className="imgContainer">
           <img src={projectImage} alt={projectTitle} />
-          <div className="projectDesc">{projectDesc}</div>
-        </a>
-      </div>
-    </>
+        </div>
+        <div className="projectDesc">{projectDesc}</div>
+      </a>
+    </div>
   );
 };
 

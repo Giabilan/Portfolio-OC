@@ -1,35 +1,133 @@
-@import "../../style/index.scss";
-
 .projectContainer {
   .title {
+    font-size: 24px;
+  }
+  .projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
-    border-radius: 80px;
-    margin: 50px auto ;
-    .schoolName {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 10px;
-      height: 20px;
-      border-radius: 50px;
-      img {
-        height: 100%;
-        object-fit: cover;
-        box-shadow: rgba(154, 18, 207, 0.15) 0px 2px 8px;
+    gap: 50px;
+    text-align: center;
+    .card {
+      transition: all 200ms ease;
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      border-radius: 20px;
+      .projectCard {
+        cursor: pointer;
+        .projectTitle {
+          position: relative;
+          font-size: 26px;
+          font-weight: bold;
+          padding: 5px;
+          svg {
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+            margin: 10px;
+          }
+        }
+        .imgContainer {
+          height: 300px;
+          width: 500px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .projectDesc {
+          padding: 14px;
+          font-weight: bold;
+          font-size: 16px;
+          color: white;
+        }
+      }
+    }
+    .card:hover {
+      background: #33333354;
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .projectContainer {
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+      text-align: center;
+      .card {
+        width: 80%;
+        margin: 0 auto;
+        .projectCard {
+          .projectTitle {
+            font-size: 16px;
+            padding: 5px;
+            svg {
+              font-size: 12px;
+              margin: 5px;
+            }
+          }
+          .imgContainer {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            margin: 0px 0;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .projectDesc {
+            padding: 14px;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    @include mobile {
+}
+
+@media (min-width: 426px) and (max-width: 900px) {
+  .projectContainer {
+    .projects {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 30px auto;
+      gap: 50px;
+      text-align: center;
+      .card {
+        width: 80%;
+        margin: 0 auto;
+        .projectCard {
+          .projectTitle {
+            font-size: 20px;
+            padding: 5px;
+            svg {
+              font-size: 16px;
+              margin: 5px;
+            }
+          }
+          .imgContainer {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            margin: 0px 0;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .projectDesc {
+            padding: 14px;
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }

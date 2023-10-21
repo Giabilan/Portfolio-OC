@@ -1,5 +1,5 @@
 import Card from "./card";
-import Kasa from "../../assets/kasa.png"; // Remplacez "" par le chemin réel vers votre image
+import Kasa from "../../assets/kasa.png";
 import OhMyFood from "../../assets/OhMyFood.png";
 import Booki from "../../assets/Booki.png";
 

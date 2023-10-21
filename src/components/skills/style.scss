@@ -1,17 +1,91 @@
 .skillsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 50px;
-  margin: 50px auto 100px auto;
+  margin: 50px auto;
   max-width: 1366px;
-
-  .iconsContainer {
-    height: 100%;
-    width: 100px;
-    img {
-      width: 60px;
+  .card {
+    margin: 0 auto;
+    .skillsCard {
       border-radius: 20px;
-      padding: 10px;
+      padding: 10px 50px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      .titleSkills {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .iconsContainer {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100px;
+        img {
+          width: 60px;
+          border-radius: 20px;
+          padding: 10px;
+        }
+      }
+      .progressBar {
+        width: 100%;
+        height: 6px;
+        background: #333;
+        border-radius: 20px;
+      }
+
+      .progress {
+        transition: all 200ms ease;
+        height: 100%;
+        background: rgb(5, 236, 5);
+        border-radius: 20px;
+      }
+    }
+    .skillsCard:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .skillsCard:hover .progress {
+      background: green;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px auto;
+    .card {
+      margin: 0 auto;
+      .skillsCard {
+        padding: 10px 20px;
+        .titleSkills {
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+        }
+        .iconsContainer {
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          width: 100px;
+          img {
+            width: 60px;
+            padding: 12px;
+          }
+        }
+        .progressBar {
+          width: 100%;
+          height: 6px;
+        }
+        .progress {
+          height: 100%;
+        }
+      }
     }
   }
 }
