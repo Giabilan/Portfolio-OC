@@ -80,6 +80,16 @@
   }
 }
 
+@media (min-width: 426px) and (max-width: 1092px) {
+  .hero {
+    .imageContainer {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 426px) {
   .hero {
     height: 50vh;
