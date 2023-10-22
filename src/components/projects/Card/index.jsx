@@ -1,27 +1,37 @@
 import PropTypes from "prop-types";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
+import { useState } from "react";
+import Modal from "../../modal";
 
-const Card = ({ projectTitle, projectDesc, projectImage, link }) => {
+const Card = ({ title, desc, image, link, modalDesc }) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="card">
-      <a href={link} target="_blank" rel="noreferrer" className="projectCard">
+    <>
+      <div className="card">
         <div className="projectTitle">
-          {projectTitle} <FaExternalLinkAlt />
+          {title} <FaExternalLinkAlt />
         </div>
-        <div className="imgContainer">
-          <img src={projectImage} alt={projectTitle} />
+        <a href={link} target="_blank" rel="noreferrer" className="projectCard">
+          <div className="imgContainer">
+            <img src={image} alt={title} />
+          </div>
+        </a>
+        <div className="projectDesc">
+          {desc} <FaInfoCircle onClick={() => setOpen(true)} />
         </div>
-        <div className="projectDesc">{projectDesc}</div>
-      </a>
-    </div>
+        {open && <Modal onClick={() => setOpen(false)} content={modalDesc} />}
+      </div>
+    </>
   );
 };
 
 Card.propTypes = {
-  projectTitle: PropTypes.string.isRequired,
-  projectDesc: PropTypes.string.isRequired,
-  projectImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  modalDesc: PropTypes.string.isRequired,
 };
 
 export default Card;

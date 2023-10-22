@@ -12,40 +12,46 @@ const Projects = () => {
       <Title content="Projets" />
       <div className="projects">
         <Card
-          projectTitle="Kasa"
-          projectDesc="Application web de location immobilière"
-          projectImage={Kasa}
+          title="Kasa"
+          desc="Application web de location immobilière"
+          image={Kasa}
           link="https://kasa-application-web.netlify.app/"
+          modalDesc="a"
         />
         <Card
-          projectTitle="OhMyFood"
-          projectDesc="Application web de livraisons"
-          projectImage={OhMyFood}
+          title="OhMyFood"
+          desc="Application web de livraisons"
+          image={OhMyFood}
           link="https://giabilan.github.io/Ohmyfood-Giabilan/"
+          modalDesc="b"
         />
         <Card
-          projectTitle="Booki"
-          projectDesc="Application web de location immobilière"
-          projectImage={Booki}
+          title="Booki"
+          desc="Application web de location immobilière"
+          image={Booki}
           link="https://giabilan.github.io/Booki-Giabilan/"
+          modalDesc="c"
         />
         <Card
-          projectTitle="Booki"
-          projectDesc="Application web de location immobilière"
-          projectImage={Booki}
+          title="Booki"
+          desc="Application web de location immobilière"
+          image={Booki}
           link="https://giabilan.github.io/Booki-Giabilan/"
+          modalDesc="d"
         />
         <Card
-          projectTitle="Kasa"
-          projectDesc="Application web de location immobilière"
-          projectImage={Kasa}
+          title="Kasa"
+          desc="Application web de location immobilière"
+          image={Kasa}
           link="https://kasa-application-web.netlify.app/"
+          modalDesc="e"
         />
         <Card
-          projectTitle="OhMyFood"
-          projectDesc="Application web de livraisons"
-          projectImage={OhMyFood}
+          title="OhMyFood"
+          desc="Application web de livraisons"
+          image={OhMyFood}
           link="https://giabilan.github.io/Ohmyfood-Giabilan/"
+          modalDesc="f"
         />
       </div>
     </div>

@@ -10,24 +10,25 @@
     gap: 50px;
     text-align: center;
     .card {
+      position: relative;
       transition: all 200ms ease;
       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
         rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       border-radius: 20px;
+      .projectTitle {
+        position: relative;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 5px;
+        svg {
+          position: absolute;
+          right: 0;
+          font-size: 16px;
+          margin: 10px;
+        }
+      }
       .projectCard {
         cursor: pointer;
-        .projectTitle {
-          position: relative;
-          font-size: 26px;
-          font-weight: bold;
-          padding: 5px;
-          svg {
-            position: absolute;
-            right: 0;
-            font-size: 16px;
-            margin: 10px;
-          }
-        }
         .imgContainer {
           height: 300px;
           width: 500px;
@@ -37,22 +38,59 @@
             object-fit: cover;
           }
         }
-        .projectDesc {
-          padding: 14px;
-          font-weight: bold;
-          font-size: 16px;
-          color: white;
+      }
+      .projectDesc {
+        position: relative;
+        padding: 14px;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        svg {
+          position: absolute;
+          right: 0;
+          font-size: 18px;
+          margin: 5px 10px;
+          cursor: pointer;
         }
       }
-    }
-    .card:hover {
-      background: #33333354;
-      transform: scale(0.98);
+      // modal
+      .modalContainer {
+        position: absolute;
+        inset: 0;
+        background: #333;
+        color: white;
+        z-index: 999;
+        width: 480px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        .modal {
+          .closeIcon {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px;
+            font-size: 30px;
+            svg {
+              cursor: pointer;
+            }
+          }
+          .text {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            z-index: -99;
+          }
+        }
+      }
+      // modal end
     }
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 629px) {
   .projectContainer {
     .projects {
       display: grid;
@@ -62,15 +100,15 @@
       .card {
         width: 80%;
         margin: 0 auto;
-        .projectCard {
-          .projectTitle {
-            font-size: 16px;
-            padding: 5px;
-            svg {
-              font-size: 12px;
-              margin: 5px;
-            }
+        .projectTitle {
+          font-size: 16px;
+          padding: 5px;
+          svg {
+            font-size: 12px;
+            margin: 5px;
           }
+        }
+        .projectCard {
           .imgContainer {
             height: 200px;
             width: 100%;
@@ -82,17 +120,58 @@
               object-fit: cover;
             }
           }
-          .projectDesc {
-            padding: 14px;
-            font-size: 12px;
+        }
+        .projectDesc {
+          padding: 14px;
+          font-size: 12px;
+          svg {
+            font-size: 14px;
+            margin: 2px 10px 0 0;
           }
         }
+        // modal
+        .modalContainer {
+          position: absolute;
+          inset: 0;
+          background: #333;
+          color: white;
+          z-index: 999;
+          width: 300px;
+          height: 200px;
+          margin: auto;
+          border-radius: 20px;
+          .modal {
+            .closeIcon {
+              display: flex;
+              justify-content: flex-end;
+              margin: 10px;
+              font-size: 20px;
+              svg {
+                cursor: pointer;
+              }
+            }
+            .text {
+              position: absolute;
+              inset: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              z-index: -99;
+            }
+          }
+        }
+        // modal end
+      }
+      .card:hover {
+        background: #33333354;
+        transform: scale(1);
       }
     }
   }
 }
 
-@media (min-width: 426px) and (max-width: 900px) {
+@media (min-width: 630px) and (max-width: 900px) {
   .projectContainer {
     .projects {
       display: grid;
@@ -100,19 +179,19 @@
       gap: 50px;
       text-align: center;
       .card {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
-        .projectCard {
-          .projectTitle {
-            font-size: 20px;
-            padding: 5px;
-            svg {
-              font-size: 16px;
-              margin: 5px;
-            }
+        .projectTitle {
+          font-size: 20px;
+          padding: 5px;
+          svg {
+            font-size: 16px;
+            margin: 5px;
           }
+        }
+        .projectCard {
           .imgContainer {
-            height: 400px;
+            height: 300px;
             width: 100%;
             object-fit: cover;
             margin: 0px 0;
@@ -122,11 +201,52 @@
               object-fit: cover;
             }
           }
-          .projectDesc {
-            padding: 14px;
+        }
+        .projectDesc {
+          padding: 14px;
+          font-size: 16px;
+          svg {
             font-size: 16px;
+            margin: 5px;
           }
         }
+        // modal
+        .modalContainer {
+          position: absolute;
+          inset: 0;
+          background: #333;
+          color: white;
+          z-index: 999;
+          width: 350px;
+          height: 300px;
+          margin: auto;
+          border-radius: 20px;
+          .modal {
+            .closeIcon {
+              display: flex;
+              justify-content: flex-end;
+              margin: 10px;
+              font-size: 30px;
+              svg {
+                cursor: pointer;
+              }
+            }
+            .text {
+              position: absolute;
+              inset: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              z-index: -99;
+            }
+          }
+        }
+        // modal end
+      }
+      .card:hover {
+        background: #33333354;
+        transform: scale(1);
       }
     }
   }

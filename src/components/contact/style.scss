@@ -1,5 +1,6 @@
 #Contact {
   height: 60vh;
+  margin: 0 20px;
 }
 
 .contact {
@@ -168,9 +169,9 @@
   }
 }
 
-Octotastic day {
+@media (min-width: 426px) and (max-width: 900px) {
   #Contact {
-    height: 70vh;
+    height: 80vh;
   }
   .contact {
     display: flex;

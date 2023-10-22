@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import "./style.scss";
 import emailjs from "@emailjs/browser";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { AiFillCloseCircle } from "react-icons/ai";
 import Button from "../Button";
 import Title from "../title";
+import Modal from "../modal";
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,41 +42,19 @@ const Contact = () => {
       <div className="contact">
         {success && (
           <>
-            <div className="modalContainer">
-              <div className="modal">
-                <div
-                  onClick={() => {
-                    setSuccess(false);
-                  }}
-                  className="closeIcon"
-                >
-                  <AiFillCloseCircle />
-                </div>
-                <div className="text">
-                  Votre message à été envoyé avec succès
-                </div>
-              </div>
-            </div>
+            <Modal
+              onClick={() => setSuccess(false)}
+              content="Votre message à été envoyé avec succès"
+            />
           </>
         )}
         {error && (
           <>
-            <div className="modalContainer">
-              <div className="modal">
-                <button
-                  onClick={() => {
-                    setSuccess(false);
-                  }}
-                  className="closeIcon"
-                >
-                  <AiFillCloseCircle />
-                </button>
-                <div className="text">
-                  Une erreur à été produite <br></br> Veuillez réessayez plus
-                  tard
-                </div>
-              </div>
-            </div>
+            <Modal
+              onClick={() => setSuccess(false)}
+              content="Une erreur à été produite, 
+              Veuillez réessayez plus tard"
+            />
           </>
         )}
         <div className="textContainer">

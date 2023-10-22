@@ -5,11 +5,13 @@ import Projects from "./components/projects";
 import "./style/index.scss";
 import Skills from "./components/skills";
 import AboutMe from "./components/aboutMe";
+import ArrowUp from "./components/arrowUp";
 
 const App = () => {
   return (
     <div>
       <section id="Accueil">
+        <ArrowUp />
         <Navbar />
         <Hero />
       </section>
