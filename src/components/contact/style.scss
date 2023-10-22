@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 1fr;
   position: relative;
   max-width: 1366px;
-  margin: 0 50px;
+  margin: 0 auto;
   gap: 50px;
   // modal
   .modalContainer {
@@ -46,7 +46,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    gap: 80px;
     .item {
       h2 {
         display: flex;
@@ -107,7 +108,7 @@
 
 @media screen and (max-width: 618px) {
   #Contact {
-    height: 80vh;
+    height: 90vh;
   }
   .contact {
     display: flex;
@@ -167,9 +168,9 @@
   }
 }
 
-@media (min-width: 618px) and (max-width: 900px) {
+Octotastic day {
   #Contact {
-    height: 60vh;
+    height: 70vh;
   }
   .contact {
     display: flex;

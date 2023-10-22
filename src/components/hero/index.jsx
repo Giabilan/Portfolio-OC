@@ -2,7 +2,7 @@ import Button from "../Button";
 import "./style.scss";
 import { motion } from "framer-motion";
 
-const fileUrl = "./src/assets/cv_rajendran_giabilan.pdf";
+const fileUrl = "en_cours_de_realisation";
 
 const textVariants = {
   initial: {
@@ -67,7 +67,7 @@ const Hero = () => {
             variants={textVariants}
             animate="scrollButton"
             src="./src/assets/scroll.png"
-            alt=""
+            alt="souris scrolling image"
           />
         </motion.div>
       </div>
@@ -77,10 +77,10 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Créatif Sérieux Challenge Passion
+        Créatif Challenge Passion Dev
       </motion.div>
       <div className="imageContainer">
-        <img src="src/assets/pic_of_giabilan.png" alt="" />
+        <img src="src/assets/pic_of_giabilan.png" alt="image de Giabilan" />
       </div>
     </div>
   );

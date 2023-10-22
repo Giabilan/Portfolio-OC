@@ -1,12 +1,12 @@
 .navbar {
   height: 100px;
-
   .wrapper {
     max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
     .social {
       .linkedinLink {
@@ -82,6 +82,22 @@
       }
       span {
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 637px) {
+  .navbar {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex-wrap: wrap;
+      .contactButton {
+        button {
+          display: none;
+        }
       }
     }
   }

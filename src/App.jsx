@@ -13,7 +13,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Skills">
+      <section id="Compétences">
         <Skills />
       </section>
       <section id="Projets">
@@ -22,7 +22,9 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
-      <section id="AboutMe"> <AboutMe /> </section>
+      <section id="A propos">
+        <AboutMe />
+      </section>
     </div>
   );
 };
