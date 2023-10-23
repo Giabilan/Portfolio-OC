@@ -1,6 +1,7 @@
 import Button from "../Button";
 import "./style.scss";
 import { motion } from "framer-motion";
+import { PiMouseSimpleFill } from "react-icons/pi";
 
 const fileUrl = "en_cours_de_realisation";
 
@@ -62,13 +63,13 @@ const Hero = () => {
               <Button content="Télecharger mon CV" />
             </motion.a>
           </motion.div>
-          <motion.img
+          <motion.div
             className="scrollIcon"
             variants={textVariants}
             animate="scrollButton"
-            src="./src/assets/scroll.png"
-            alt="souris scrolling image"
-          />
+          >
+            <PiMouseSimpleFill />
+          </motion.div>
         </motion.div>
       </div>
       <motion.div
