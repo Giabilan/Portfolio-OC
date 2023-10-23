@@ -15,6 +15,7 @@ const Projects = () => {
       <Title content="Projets" />
       <div className="projects">
         <Card
+          repoLink="https://github.com/Giabilan/Kasa_P8"
           title="Kasa"
           desc="Application web de location immobilière"
           image={Kasa}
@@ -22,6 +23,7 @@ const Projects = () => {
           modalDesc="J'ai développé l'ensemble de l'application front-end de la nouvelle plateforme web de location d'appartements Kasa. J'ai suivi les maquettes Figma et les coding guidelines de l'entreprise. Malgré le retard dans le recrutement du développeur back-end, j'ai réussi à terminer le projet dans les délais et à répondre aux attentes des utilisateurs."
         />
         <Card
+          repoLink="https://github.com/Giabilan/Ohmyfood-Giabilan"
           title="OhMyFood"
           desc="Applications de livraison"
           image={OhMyFood}
@@ -29,13 +31,15 @@ const Projects = () => {
           modalDesc="J'ai développé un site web mobile first pour OhMyFood, une plateforme qui permet aux clients de composer le menu de leur repas dans des restaurants gastronomiques."
         />
         <Card
+          repoLink="https://github.com/Giabilan/Booki-Giabilan"
           title="Booki"
           desc="Application web de location immobilière"
           image={Booki}
           link="https://giabilan.github.io/Booki-Giabilan/"
-          modalDesc="J'ai intégré l'interface du site web Booki, une plateforme de réservation d'hébergements et d'activités.J'ai travaillé à partir des maquettes Figma fournies par l'UI designer, en respectant les spécifications et contraintes techniques définies dans la note de synthèse.J'ai développé le site en HTML et CSS, en utilisant les principes du responsive design pour garantir une bonne expérience utilisateur sur tous les appareils."
+          modalDesc="Création de la page d'accueil d'une agence de voyage en pure HTML & CSS"
         />
         <Card
+          repoLink="https://github.com/Giabilan/P10_724_events"
           title="724 Events"
           desc="Déboggage d'un site d'une agence"
           image={events}
@@ -44,6 +48,7 @@ const Projects = () => {
           J'ai utilisé mes compétences en HTML, CSS et JavaScript pour corriger les bugs et améliorer le design du site."
         />
         <Card
+          repoLink="https://github.com/Giabilan/P9_Nina-Carducci"
           title="Photographe Nina Carducci"
           desc="Optimisation du SEO"
           image={seo}
@@ -51,6 +56,7 @@ const Projects = () => {
           modalDesc="J'ai optimisé le site web de la photographe Nina Carducci pour les performances et le référencement."
         />
         <Card
+          repoLink="https://github.com/Giabilan/TamilFilm"
           title="Film Kollywood"
           desc="Application web film Kollywood"
           image={tamilFIlm}

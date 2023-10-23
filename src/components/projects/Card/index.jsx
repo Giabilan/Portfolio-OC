@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import { useState } from "react";
 import Modal from "../../modal";
 
-const Card = ({ title, desc, image, link, modalDesc }) => {
+const Card = ({ title, desc, image, link, modalDesc, repoLink }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -20,7 +20,14 @@ const Card = ({ title, desc, image, link, modalDesc }) => {
         <div className="projectDesc">
           {desc} <FaInfoCircle onClick={() => setOpen(true)} />
         </div>
-        {open && <Modal onClick={() => setOpen(false)} contentTitle={title} content={modalDesc}  />}
+        {open && (
+          <Modal
+            onClick={() => setOpen(false)}
+            contentTitle={title}
+            content={modalDesc}
+            repoLink={repoLink}
+          />
+        )}
       </div>
     </>
   );
@@ -32,6 +39,7 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   modalDesc: PropTypes.string.isRequired,
+  repoLink: PropTypes.string.isRequired,
 };
 
 export default Card;

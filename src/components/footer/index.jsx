@@ -7,10 +7,14 @@ const Footer = () => {
     <div className="footerContainer">
       <div className="text">© Copyright 2023</div>
       <div className="mediaContainer">
-        <a href="https://www.linkedin.com/in/giabilan-rajendran-abb062276/">
+        <a
+          href="https://www.linkedin.com/in/giabilan-rajendran-abb062276/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={Linkedin} alt="logo Linkedin" />
         </a>
-        <a href="https://github.com/Giabilan">
+        <a href="https://github.com/Giabilan" target="_blank" rel="noreferrer">
           <img src={Github} alt="logo Github" />
         </a>
       </div>

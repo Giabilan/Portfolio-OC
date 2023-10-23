@@ -3,7 +3,6 @@
     font-size: 24px;
   }
   .projects {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,6 +10,7 @@
     gap: 50px;
     text-align: center;
     .card {
+      position: relative;
       transition: all 200ms ease;
       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
         rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -60,8 +60,6 @@
         background: #333;
         color: white;
         z-index: 999;
-        width: 600px;
-        height: 300px;
         line-height: 26px;
         margin: auto;
         border-radius: 20px;
@@ -76,8 +74,6 @@
             }
           }
           .text {
-            position: absolute;
-            inset: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,6 +81,28 @@
             font-size: 16px;
             padding: 10px;
             z-index: -99;
+          }
+          .linkContainer {
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            .githubIcon {
+              display: flex;
+              justify-content: center;
+              color: white;
+              img {
+                width: 50%;
+              }
+            }
+            .repoLink {
+              font-size: 16px;
+              color: white;
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -140,8 +158,6 @@
           background: #333;
           color: white;
           z-index: 999;
-          width: 300px;
-          height: 200px;
           margin: auto;
           border-radius: 20px;
           .modal {
@@ -155,14 +171,35 @@
               }
             }
             .text {
-              position: absolute;
-              inset: 0;
               display: flex;
               justify-content: center;
               align-items: center;
               font-size: 12px;
               line-height: 15px;
               z-index: -99;
+            }
+            .linkContainer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+              .githubIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                img {
+                  width: 30%;
+                }
+              }
+              .repoLink {
+                display: flex;
+                text-align: center;
+                color: white;
+                text-decoration: underline;
+                font-size: 12px;
+                margin-left: -10px;
+              }
             }
           }
         }
@@ -223,8 +260,6 @@
           background: #333;
           color: white;
           z-index: 999;
-          width: 350px;
-          height: 300px;
           margin: auto;
           border-radius: 20px;
           .modal {
@@ -238,14 +273,31 @@
               }
             }
             .text {
-              position: absolute;
-              inset: 0;
               display: flex;
               justify-content: center;
               align-items: center;
-              font-size: 14px;
-              line-height: 18px;
+              font-size: 18px;
+              line-height: 20px;
               z-index: -99;
+            }
+            .linkContainer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+              .githubIcon {
+                display: flex;
+                justify-content: center;
+                color: white;
+                img {
+                  width: 50%;
+                }
+              }
+              .repoLink {
+                color: white;
+                text-decoration: underline;
+                font-size: 14px;
+              }
             }
           }
         }
