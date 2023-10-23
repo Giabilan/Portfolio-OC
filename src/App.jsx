@@ -6,6 +6,7 @@ import "./style/index.scss";
 import Skills from "./components/skills";
 import AboutMe from "./components/aboutMe";
 import ArrowUp from "./components/arrowUp";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <section id="A propos">
         <AboutMe />
       </section>
+      <Footer />
     </div>
   );
 };
