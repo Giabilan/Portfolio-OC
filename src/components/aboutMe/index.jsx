@@ -7,18 +7,18 @@ const AboutMe = () => {
       <Title content="Qui suis-je ?" />
       <div className="aboutMeTextContainer">
         <p className="aboutMeText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          praesentium at totam officiis illo numquam, magnam amet labore
-          perspiciatis delectus eos repellendus omnis quam voluptas explicabo
-          similique voluptate. Quasi quia tempore perferendis sint, vitae
-          dignissimos doloremque aspernatur repellendus debitis saepe aut totam.
-          Quos eius assumenda, aliquid quis rem blanditiis temporibus minima
-          libero minus provident alias nesciunt maxime, reprehenderit quaerat
-          illo magnam sit delectus, harum vel. Facilis architecto, saepe id odit
-          pariatur numquam aut aliquam assumenda magnam non in cupiditate
-          repudiandae consectetur aperiam, error ducimus nihil similique?
-          Assumenda dolorum nobis perspiciatis, laborum tempora recusandae atque
-          labore necessitatibus dolorem! Iste, sint exercitationem.
+          Je m&apos;appelle Giabilan, j&apos;ai 21 ans et je suis développeur
+          web Front end. Je suis passionné par la technologie et j&apos;aime
+          créer des choses qui ont un impact positif sur le monde. J&apos;ai
+          commencé à apprendre à l&apos;âge de 20 ans, sans aucune connaissance
+          préalable. J&apos;ai appris en autodidacte, en suivant des tutoriels
+          en ligne et en travaillant sur des projets d&apos; OpenClassrooms. En
+          9 mois, j&apos;ai acquis les compétences nécessaires pour développer
+          des sites web. J&apos;ai également appris à travailler en équipe et à
+          gérer des projets. Je suis toujours en train d&apos;apprendre et de
+          m&apos;améliorer, mais je suis fier de ce que j&apos;ai accompli
+          jusqu&apos;à présent. Je suis impatient de voir ce que l&apos;avenir
+          me réserve.
         </p>
       </div>
     </div>

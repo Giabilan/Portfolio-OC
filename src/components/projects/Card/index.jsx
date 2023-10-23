@@ -20,7 +20,7 @@ const Card = ({ title, desc, image, link, modalDesc }) => {
         <div className="projectDesc">
           {desc} <FaInfoCircle onClick={() => setOpen(true)} />
         </div>
-        {open && <Modal onClick={() => setOpen(false)} content={modalDesc} />}
+        {open && <Modal onClick={() => setOpen(false)} contentTitle={title} content={modalDesc}  />}
       </div>
     </>
   );

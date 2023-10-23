@@ -9,10 +9,20 @@
     padding: 7px 10px;
     margin: 10px;
     cursor: pointer;
-      z-index: 99;
+    z-index: 99;
 
     svg {
       font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .arrowUpContainer {
+    .arrowUp {
+      svg {
+        font-size: 22px;
+      }
     }
   }
 }

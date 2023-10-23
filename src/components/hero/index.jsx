@@ -3,7 +3,7 @@ import "./style.scss";
 import { motion } from "framer-motion";
 import { PiMouseSimpleFill } from "react-icons/pi";
 
-const fileUrl = "en_cours_de_realisation";
+const fileUrl = "src/assets/cv_rajendran_giabilan.pdf";
 
 const textVariants = {
   initial: {
