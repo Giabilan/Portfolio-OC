@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const SkillsCard = ({ title, icon, level }) => {
+const SkillsCard = ({ title, icon }) => {
   return (
     <div className="card">
       <div className="skillsCard">
@@ -10,9 +10,6 @@ const SkillsCard = ({ title, icon, level }) => {
             <img src={icon} alt={title} />
           </div>
         </div>
-        <div className="progressBar">
-          <div className="progress" style={{ width: `${level}%` }}></div>
-        </div>
       </div>
     </div>
   );
@@ -21,7 +18,6 @@ const SkillsCard = ({ title, icon, level }) => {
 SkillsCard.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
-  level: PropTypes.number.isRequired,
 };
 
 export default SkillsCard;

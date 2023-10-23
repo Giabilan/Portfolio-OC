@@ -3,8 +3,6 @@ import "./style.scss";
 import { motion } from "framer-motion";
 import { PiMouseSimpleFill } from "react-icons/pi";
 
-const fileUrl = "src/assets/cv_rajendran_giabilan.pdf";
-
 const textVariants = {
   initial: {
     x: -500,
@@ -59,7 +57,7 @@ const Hero = () => {
             <motion.a href="#Projets" variants={textVariants}>
               <Button content="Voir mes projets" />
             </motion.a>
-            <motion.a href={fileUrl} download>
+            <motion.a href="../src/assets/cv_rajendran_giabilan.pdf" download>
               <Button content="Télecharger mon CV" />
             </motion.a>
           </motion.div>
@@ -80,9 +78,6 @@ const Hero = () => {
       >
         Créatif Challenge Passion Dev
       </motion.div>
-      <div className="imageContainer">
-        <img src="src/assets/pic_of_giabilan.png" alt="image de Giabilan" />
-      </div>
     </div>
   );
 };

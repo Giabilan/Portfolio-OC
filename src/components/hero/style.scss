@@ -51,25 +51,6 @@
       }
     }
   }
-
-  .imageContainer {
-    display: none;
-    max-width: 1366px;
-    margin: auto;
-    height: 80%;
-    transform: rotate(-18deg);
-    position: absolute;
-    top: 150px;
-    right: 150px;
-    img {
-      width: 90%;
-      height: 50%;
-      object-fit: cover;
-      border-radius: 100%;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-  }
-
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
@@ -79,16 +60,6 @@
     width: 50%;
     font-weight: bold;
     z-index: -1;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1092px) {
-  .hero {
-    .imageContainer {
-      img {
-        display: none;
-      }
-    }
   }
 }
 
@@ -141,9 +112,6 @@
         }
       }
     }
-    .imageContainer {
-      display: none;
-    }
   }
 }
 
@@ -192,9 +160,6 @@
           display: none;
         }
       }
-    }
-    .imageContainer {
-      display: none;
     }
   }
 }
