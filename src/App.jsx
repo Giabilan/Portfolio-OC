@@ -22,11 +22,11 @@ const App = () => {
       <section id="Projets">
         <Projects />
       </section>
-      <section id="Contact">
-        <Contact />
-      </section>
       <section id="A propos">
         <AboutMe />
+      </section>
+      <section id="Contact">
+        <Contact />
       </section>
       <Footer />
     </div>
