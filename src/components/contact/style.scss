@@ -33,7 +33,7 @@
       }
       .text {
         position: absolute;
-        inset: 0;
+        inset: 100px;
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
@@ -128,7 +128,10 @@
           font-size: 24px;
         }
         .text {
-          font-size: 16px;
+          position: absolute;
+          inset: 0;
+          top: 10px;
+          font-size: 14px;
         }
       }
     }
@@ -184,13 +187,15 @@
     margin: 50px auto;
     // modal
     .modalContainer {
-      width: 650px;
+      width: 400px;
       height: 200px;
       .modal {
         .closeIcon {
           font-size: 24px;
         }
         .text {
+          position: absolute;
+          inset: 10px;
           font-size: 16px;
         }
       }

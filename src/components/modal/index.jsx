@@ -32,8 +32,8 @@ const Modal = ({ repoLink, contentTitle, content, onClick }) => {
 
 export default Modal;
 Modal.propTypes = {
-  repoLink: PropTypes.string.isRequired,
-  contentTitle: PropTypes.string.isRequired,
+  repoLink: PropTypes.string,
+  contentTitle: PropTypes.string,
   content: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };

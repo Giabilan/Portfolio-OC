@@ -39,7 +39,7 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   modalDesc: PropTypes.string.isRequired,
-  repoLink: PropTypes.string.isRequired,
+  repoLink: PropTypes.string,
 };
 
 export default Card;
