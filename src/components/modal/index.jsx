@@ -10,7 +10,7 @@ const Modal = ({ repoLink, contentTitle, content, onClick }) => {
           <AiFillCloseCircle />
         </div>
         <div className="text">
-          {contentTitle} : <br></br> {content}
+          <h3>{contentTitle}</h3> <br></br> <p>{content}</p>
         </div>
         <div className="linkContainer">
           <div className="githubIcon">
