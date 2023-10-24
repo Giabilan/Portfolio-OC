@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import { useState } from "react";
 import Modal from "../../modal";
 
-const Card = ({ title, desc, image, link, modalDesc, repoLink }) => {
+const Card = ({ title, desc, image, link, modalDesc, repoLink, skills }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,6 +26,7 @@ const Card = ({ title, desc, image, link, modalDesc, repoLink }) => {
             contentTitle={title}
             content={modalDesc}
             repoLink={repoLink}
+            skills={skills}
           />
         )}
       </div>
@@ -40,6 +41,7 @@ Card.propTypes = {
   link: PropTypes.string.isRequired,
   modalDesc: PropTypes.string.isRequired,
   repoLink: PropTypes.string,
+  skills: PropTypes.string,
 };
 
 export default Card;

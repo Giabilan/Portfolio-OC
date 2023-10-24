@@ -2,7 +2,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import PropTypes from "prop-types";
 import Github from "../../assets/github.png";
 
-const Modal = ({ repoLink, contentTitle, content, onClick }) => {
+const Modal = ({ repoLink, skills, contentTitle, content, onClick }) => {
   return (
     <div className="modalContainer">
       <div className="modal">
@@ -25,6 +25,7 @@ const Modal = ({ repoLink, contentTitle, content, onClick }) => {
             Lien repo Github
           </a>
         </div>
+        <h4>compétences : {skills} </h4>
       </div>
     </div>
   );
@@ -33,6 +34,7 @@ const Modal = ({ repoLink, contentTitle, content, onClick }) => {
 export default Modal;
 Modal.propTypes = {
   repoLink: PropTypes.string,
+  skills: PropTypes.string,
   contentTitle: PropTypes.string,
   content: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
