@@ -5,7 +5,8 @@ Bienvenue sur mon portfolio en ligne !
 
 ## Lien du portfolio en ligne
 
-lien : https://giabilan-portfolio.netlify.app/
+Lien : <a href="https://giabilan-portfolio.netlify.app/" target="_blank">Cliquez ici</a>
+
 
 
 ## Présentation
